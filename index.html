@@ -1,0 +1,366 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Music Streamr</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#101323] dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#21284a] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Streamr</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Premium</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Support</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Download</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#8e99cc] flex border-none bg-[#21284a] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#21284a] focus:border-none h-full placeholder:text-[#8e99cc] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#607afb] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Log in</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#21284a] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign up</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#8e99cc] flex border-none bg-[#21284a] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search for artists, songs, or podcasts"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#21284a] focus:border-none h-full placeholder:text-[#8e99cc] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Playlists</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQcGEq_V61-8skCa91XQKDM3jVTTKIu2nqeO_N_WMGgj2AO_TLTfaa95oq5RaT8p07zkvQwxEGCmqRcQ00fRfeXblrwaKKoRBSxPe2pMk-WGyn17PsTu_M67BNkkuq0IH62janxpwub_PAaCADhatyATI9kRG-as6w7hwBx3NUi9kviG6ynJXYyZO5WdynZF-7QsgTH6Ijkx1IOIWyyfZ-SzmhChURgCZqM561MChJ4YRHzgLjkP9DbMUp2VGcuMePz5pETdmmOno");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Pop Hits</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIFBw1mPvDLFRi6xQ8qwfwR5dxG3CrdlFGfCjDuocHMsie95IWYnJcnK_Du3IwmpCowdZ0jlpeEC-XZ_4Kx6Nhv-qI1-FKe7Q3bc42uRGtIW1-FzNVZYg8qAALq0awbMKsr-xyAwD8C167iURnk782nD8A50L1uUFFg6kLVhDMVZ3EmUmBjdqQMiIYM8ez4JWzjytKW1pH1g1bSJO_gE1Y8XpcnOC-0Y67ejA4u8QhJYPPzKx45BXYxqpG_TtpBAoxu-LUp8mAK2A");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Hip Hop Beats</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAODcoM9Xqo8aHreiBkSQZJifwAeEimq_11yDqggoZ-H8RGNLYFO41tvFbnNAKpFv74NKq2WuCfW4K2f3uCmI-lsRULlyRMQsMCPypJt34lYU4VEl4sd3PtzvXwBMBCZFuwyroP3ok-S67JJKggDtNrUaxhomhLa1rcpEG5PLxT09qunl5ImzXkHTAPE6j7v1TowFBleu40jUhEsI3e_A_472np7ihpKTKCvJFjTwnBn5h7NExN6p0wqavzM_sl3Kc0v1mXxwVtRmo");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Electronic Dance Music</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgnSejlW6Fe7V_fEmKgpsgvDSNc5QbMv8Mk6znXMAJWL4JHsQDx0G_2ax71M3jpfgyFBlJbbN6VhI2_iigr5p6ugO9TDv80ig1U-IugKOwqqaW1uRSWwj1vNFpc-tcOzR1ivGOg89W4xwC6nzGQLy5xY5z24E85XZjyJCcGs1hYGOBAHm69l3fSG5ojwUE1sxrqizlzEJpzGyIm40o96gkI25RRQ1SzLhmUM6sURt8dipjCT3yPXpnZ2WeD2wK5Pg9JjdphMJJkNw");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Indie Rock</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Releases</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCw_2nPMrefN1ZK4GoQTG7i0a19kB-2u0SeGAtnz3DzWyIpMbFI6qzUClJ03KgxM5e8x1dNockPMEuM6AwJTM7AxL1j3spWJUwp08uDYpJhnO_fLscKzfZM08uC7F2zk25HeH8YuTs4R3fAiwMWvdRut3rnEcSI3eLCzzk8HjJar2nQIKrgYNFeYWsR5bK2UeX00PM_d0ThYo4VGoqKe9zBSnALzDUrC3Wloax2bhM8TAhaVNyHvPasNK4_LFxoxUGFw75WY2tx5cw");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Electric Beats</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOJJg9vT00y3jfehCi_T-TAbQpFE8sED_5kI56rmYEgHs2W9is1xdF3VlVi-HN4P7EgIZPT7RgfF5IPeU1k2A4IKq6jHQoHEJZFh6JMwTx_fo1JvXBvES9O5dAeQvfmi_QjqspFpEE7eKCCwvrmTcgqogJt4O3VfaywmKvqz_N5XWXHHJNf7QvFA0SzdjcqIE0cY_jsLFG9XtjAtMbQQRlnOAa5AiLDSwh4h1CqfqZJfxkaKn8P9zMT0JD_5bRivXtgwD5GvpXpgA");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Urban Flow</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRKEHuixLhnpUqfjLec8PDEFXmlzZk2GZr4wLcHE12u03vw-sCahj7RV93vHdk_fS6X50Nky0hbTtn6DYZ53qcsZzjRoJEnTdLf45h-ByT805dzlWxN8Z8gTvcZs_5JpPfW00_bDPIS0m-qvLKuohom7X1w3SA8ZtcOJZ0B12OUlMVMsOajvfOYEly0XKaaYtzZcUA9xgUyffneIns30g3I-lejxfFKWTGvh3IDk9csqWMHhOMiFnsdrXgte6D8sT3YauHvxpdplA");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Pop Sensations</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCA7okronkvs5fHdp_DG2RlltIy1uwMcT6no5Qb7klrk-eoxlhI98wVfVHtxvKm6W3NvpwlIwAbE6uA315ilHX8M62LsW2C4NXIszbjWeKuOb9Nis7sIuiaRIVtowa7lj-QzX8gsBmVJ73oZyXuCR8Dt04Ok4aWW7f84n93EhKOywiGHamgn2lK6g8IendqMLhEQMXTeoMc5nVApAY61e79_FKoicdwoWRDwOoLD3D-B0Ms7_tPN3ds94qwmKzcjSRPZsRSRF924wA");'
+                  ></div>
+                  <p class="text-white text-base font-medium leading-normal">Rock Anthems</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex size-full min-h-screen flex-col bg-[#131520] dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282d43] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Streamr</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Premium</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Support</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Download</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#99a0c2] flex border-none bg-[#282d43] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#282d43] focus:border-none h-full placeholder:text-[#99a0c2] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYQZh7PsE9XQqsaO9UAWHhCbSYuRjDwimZafoiYpdmuU_TjdbTCUFdxVGIGucbD23_GE4cC5z0CZ7B77ONXsONRzkI3UKyJVT1KPBzkGJWAGulmfRefGJxOQHfqxFRiLHjJVNR1gH8hfSp8mqbdlOnf9S_IFoopKubvHm3cGsvhfdCa8NWTJgbIrPhS3guiRM76jmEdyYsuIo4rlO4WFI1fqBN97Q6z67KH54oIOar369rhxfNrjuBaf0ot-R7mBx-7GbcpW2qPrI");'
+            ></div>
+          </div>
+        </header> -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Liked Songs</p>
+                <p class="text-[#99a0c2] text-sm font-normal leading-normal">100 songs</p>
+              </div>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#394060] bg-[#131520]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#1d2030]">
+                      <th class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">#</th>
+                      <th class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Title</th>
+                      <th class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Album</th>
+                      <th class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Date Added</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">1</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Midnight Serenade
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Echoes of the Night
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-15
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">2</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Lost in the City Lights
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Urban Rhythms
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-12
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">3</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Whispers of the Wind
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Nature's Symphony
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-10
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">4</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Dancing Shadows
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Mystic Groove
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-08
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">5</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Starlight Sonata
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Celestial Harmonies
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-05
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">6</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Rhapsody in Blue
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Jazz Impressions
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-03
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">7</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Ocean's Lullaby
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Coastal Dreams
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-08-01
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">8</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Desert Mirage
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Arid Echoes</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-07-29
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">9</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Forest Reverie
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Woodland Whispers
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-07-27
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#394060]">
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">10</td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Mountain Echo
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Alpine Reflections
+                      </td>
+                      <td class="table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#99a0c2] text-sm font-normal leading-normal">
+                        2023-07-25
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-120{display: none;}}
+                @container(max-width:240px){.table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-240{display: none;}}
+                @container(max-width:360px){.table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-360{display: none;}}
+                @container(max-width:480px){.table-f81d38a4-42ad-41c2-a527-5b4aed850eb2-column-480{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
